@@ -1,0 +1,6 @@
+- name: 'default'                # name of this dashboard configuration
+  org_id: 1                      # id of the org to hold the dashboard
+  folder: ''                     # name of the folder to put the dashboard
+  type: 'file'                   # type of dashboard description (json files)
+  options:
+    folder: '/dashboards/'       # where dashboards are

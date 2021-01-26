@@ -1,0 +1,10 @@
+USE mysql;
+GRANT ALL ON *.* TO 'root'@'%' identified by 'odhazzar' WITH GRANT OPTION ;
+CREATE DATABASE IF NOT EXISTS wpdb;
+CREATE DATABASE IF NOT EXISTS phpmyadmin;
+CREATE USER 'wpusr'@'%' IDENTIFIED BY 'odhazzar';
+GRANT ALL PRIVILEGES ON wpdb.* to 'wpusr'@'%';
+CREATE USER 'pmausr'@'%' IDENTIFIED BY 'odhazzar';
+GRANT ALL PRIVILEGES ON phpmyadmin.* to 'pmausr'@'%';
+GRANT ALL PRIVILEGES ON *.* TO 'pmausr'@'%';
+FLUSH PRIVILEGES ;
